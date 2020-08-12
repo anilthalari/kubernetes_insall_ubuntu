@@ -1,0 +1,34 @@
++++++++++++++++++++++++++++++++Lxc Commands+++++++++++++++++++++++++++++++++++
+
+lxc-ls   #list of containers
+lxc image list # list of images
+lxc image alias create anil fbf4245aaf24 # alias creation
+lxc image list
+l --> shortest image alias
+L --> Newline-separated list of all image aliases
+f --> Fingerprint(short)
+F --> Fingerprint(Long)
+p --> whather image is public
+d --> description
+a --> architecture
+s --> size
+u --> upload date
+t --> type
+lxc stop containername # stop container
+lxc start containername # start container
+lxc exec containername sh # enter into container
+lxc storage list # list storage 
+lxc storage edit default # default storage edit
+lxc info containername # info about container
+lxc move oldname newname # rename of container
+lxc file edit CONTAINERNAME/etc/passwd 
+lxc file pull CONTAINERNAME/etc/passwd /tmp/mypasswd 
+lxc image export container1 .
+lxc image import Fingerprint.tar
+
+
+++++++++++++++++++++++++++++++++RKT commands +++++++++++++++++++++++++++++++++++
+rkt list # list of running containers
+rkt image list # 
+
+
